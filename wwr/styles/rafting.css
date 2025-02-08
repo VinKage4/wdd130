@@ -1,0 +1,31 @@
+:root{
+    --primary-color: #2a9d8f;
+    --secondary-color: #e9c46a;
+    --accent-color: #f4a261;
+
+    --additional-accent-color:#e76f51;
+
+    --heading-font: 'arial', serif;
+    --paragraph-font:   Georgia;
+    --avigation-background-color: #2a9d8f;
+    --nav-link-color:#e9c46a;
+    --nav-hover-link-color:#f4a261;
+    --nav-hover-background-color:#e76f51; 
+}
+a {
+    text-decoration: none;
+}
+.hero img {
+    display:block;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    position:absolute;
+}
+article {
+    position: absolute;
+}
+img p{
+    float: right;
+}
