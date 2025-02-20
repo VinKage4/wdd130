@@ -284,7 +284,243 @@ footer p {
 }
 
 footer p a {
+    text-align: center;
     color: var(--nav-link-color);
     font-weight: bold;
     text-decoration: underline;
+}
+
+/* Trips Page */
+.trips {
+    text-align: center;
+    margin: var(--margin);
+    padding: var(--padding);
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow);
+}
+
+.trips h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    border-radius: 5px;
+}
+
+/* Grid Layout for Trips */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: var(--padding);
+}
+
+.trip {
+    background: #f9f9f9;
+    padding: var(--padding);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    background: var(--accent-color);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.cta h2, .cta p {
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Trip Table */
+.trip-table {
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-table table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: var(--shadow);
+}
+
+.trip-table th, .trip-table td {
+    border: var(--border);
+    padding: 12px;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+.newsletter h2 {
+    color: var(--primary-color);
+}
+
+.newsletter form {
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Call-to-Action Section */
+.cta {
+    text-align: center;
+    background: var(--accent-color);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: var(--nav-link-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+/* Social Links */
+.Sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
