@@ -3,18 +3,164 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Navigation */
 nav {
     background-color: steelblue;
     padding: 10px;
+    text-align: center;
 }
+
 nav a {
     color: white;
-    display: block;
-    padding: 20px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+nav a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+/* Header Styles */
 h1 {
     color: steelblue;
+    text-align: center;
+    margin: 20px 0;
 }
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    max-width: 840px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+.newsletter h2 {
+    color: steelblue;
+}
+
+.newsletter form {
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: #003366;
+}
+
+/* Call-to-Action Section */
+.cta {
+    text-align: center;
+    background: #FFA500;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.cta h2 {
+    color: #fff;
+}
+
+.cta p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #004466;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #002244;
+}
+
+/* Grid Layout for About Section */
+.about {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Image Styling */
 img {
     width: 150px;
     height: auto;
@@ -22,50 +168,71 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p {
-    padding: 10px;
+
+/* Personal Info Section */
+.personal-info {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
 }
-main {
-    max-width: 840px;
+
+.personal-info img {
+    border-radius: 50%;
+    margin-top: 10px;
 }
+
+.personal-info p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Favorite Locations */
+.locations {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+
+.locations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.locations li {
+    margin: 10px 0;
+}
+
+.locations a {
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bold;
+}
+
+.locations a:hover {
+    color: #003366;
+}
+
+/* Sidebar (Utah Info) */
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 40em;
+    margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
+
 aside img {
     width: 200px;
     height: auto;
 }
-main img {
-    width: 150px;
-    height: auto;
-    float: right;
-}
-p {padding: 0;}
+
+/* Footer */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
     text-align: center;
-}
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
-aside {
-    width: 40em;
-    text-align: center;
-}
-aside h2 {
-    position: absolute;
-    top: 595px;
-    left: 300px;
 }
