@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dry OAR Rafting</title>
+    <meta name="description" content="Get in touch with Dry OAR Rafting. Find our contact details, including address, phone number, and email. Reach out for reservations, general inquiries, or website suggestions.">
+    <meta name="author" content="Vinicius Sousa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">    
+</head>
+<body>
+   <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+   </header>
+   <main>
+        <h1>Contact Us</h1>
+        <section class="contact-info">
+            <h2>Our Location</h2>
+            <p><strong>Dry OAR Rafting</strong></p>
+            <p>123 Rapids Lane</p>
+            <p>River City, RC 98765</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:contact@dryoar.com">contact@dryoar.com</a></p>
+
+            <!-- Embedded Google Map -->
+            <h3>Find Us Here</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509334!2d-122.41941548468137!3d37.77492997975965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5c0f7b1f%3A0x5a3e69dc96a3198f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1643674597093!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe - Lead Guide">
+                    <figcaption>John Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith - Customer Support">
+                    <figcaption>Jane Smith - Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mike Johnson - Safety Specialist">
+                    <figcaption>Mike Johnson - Safety Specialist</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+   </main>
+   <footer>
+        <p>©️ 2024 Rafting Site Document 📊Vinicius Sousa📉 WDD 130</p>
+        <nav class="Sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="Instagram"></a>
+        </nav>
+        <p><a href="wireframes/contact-wireframe.png">View Contact Page Wireframe</a></p>
+   </footer>
+</body>
+<!--02/10/2024 -->
+</html>
